@@ -97,25 +97,319 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 
+body {
+    line-height: 1;
+    /*width: 1366px;*/
+    min-width: 1366px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    bottom: 50px;
+    background: url("../img/background-pattern.jpg") repeat top left transparent;
+}
 
+ol, ul {
+    list-style: none;
+}
 
+blockquote, q {
+    quotes: none;
+}
 
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
+a {
+    color: #0077bb;
+    text-decoration: none;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
 
+.container {
+    background: #FFF;
+    width: 1366px;
+    margin: 0 auto;
+    -moz-box-shadow: 0 0 10px 5px #c3c3c3;
+    -webkit-box-shadow: 0 0 10px 5px #c3c3c3;
+    box-shadow: 0 0 10px 5px #c3c3c3;
+}
 
+/* header */
 
+.header {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
 
+/*логотип*/
+.logoWrap {
+    background: url('../img/logo.png') no-repeat top left transparent;
+    float: left;
+    margin: 5px 0 0 20px;
+    width: 240px;
+    height: 90px;
+    position: relative;
+}
 
+/*логотип*/
+.logoWrap h1 {
+    display: none;
+}
 
+/*меню*/
+.menu {
+    width: 800px;
+    float: left;
+}
 
+/*список меню*/
+.h-menu {
+    height: 30px;
+    width: 640px;
+    margin: 0 auto;
+    top: 38px;
+    position: relative;
+}
+
+.h-menu li {
+    margin-left: 30px;
+    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    float: left;
+}
+
+/*вертикальное меню*/
+ul.v_menu {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: inline-block;
+    background-color: #3d3e40;
+    width: 190px;
+}
+
+ul.v_menu li {
+    list-style: none;
+    position: relative;
+}
+
+ul.v_menu li a {
+    padding: 10px 12px 12px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid #c4c4c4;
+}
+
+ul.v_menu li a:hover {
+    background-color: #b00000;
+}
+
+ul.v_menu li:first-child a {
+    border-top: none;
+}
+
+ul.v_menu li:first-child a:hover {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+}
+
+ul.v_menu li:last-child a:hover {
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+}
+
+/*Выпадающее меню*/
+ul.v_menu li ul {
+    display: none;
+}
+
+ul.v_menu li:hover ul {
+    display: block;
+    position: absolute;
+    left: 190px;
+    top: 1px;
+    background-color: #28282a;
+    width: 150px;
+    z-index: 1000;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+}
+
+ul.v_menu li:hover ul li:first-child a:hover {
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+
+ul.v_menu li:hover ul li:last-child a:hover {
+    border-radius: 0 0 5px 0;
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+}
+
+/*********************************************/
+
+.font1 {
+    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+.font2 {
+    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 0.4em;
+}
+
+/*ссылки в меню*/
+.ma {
+    color: #000000;
+}
+
+.ma:hover {
+    color: red;
+}
+
+.ma:hover {
+    -moz-box-shadow: 0px 4px 0px 0px #c3c3c3;
+    -webkit-box-shadow: 0px 4px 0px 0px #c3c3c3;
+    box-shadow: 0px 4px 0px 0px #c3c3c3;
+}
+
+/*ТЕЛЕФОН*/
+.mobile {
+    width: 300px;
+    float: left;
+}
+
+.phone {
+    top: 38px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* КОНТЕНТ */
+
+#main {
+    padding: 20px 20px 30px;
+    overflow: hidden;
+}
+
+/**/
+#main p {
+    font-size: 14px;
+    color: #646464;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+
+#main h2,
+#main h3,
+#main h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 20px;
+}
+
+/**/
+.coll_left {
+    float: left;
+    width: 974px;
+    margin-right: 20px;
+    background-color: yellow;
+}
+
+.coll_right {
+    float: left;
+    width: 332px;
+    background-color: #9acd32;
+}
+
+/* sidebar */
+
+.sidebar-widget {
+    margin: 10px 0 20px;
+    float: left;
+    width: 282px;
+    padding: 0 20px;
+}
+
+/**/
+#sidebar .title {
+    font: 24px/30px 'Rokkitt', serif;
+    color: #4f4e4e;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+/**/
+.ad-widget {
+    padding: 20px 0 0;
+}
+
+/* checklist */
+
+.check-list {
+    margin: 0;
+}
+
+/**/
+.check-list li {
+    background: url('../img/checkmark.png') no-repeat 0 0 transparent;
+    padding: 0 0 12px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
+}
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 
 /*
  * Image replacement
@@ -225,9 +519,9 @@ textarea {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
