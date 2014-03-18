@@ -11,7 +11,7 @@
 }
 
 .slideContent {
-    background: url("../../img/contentBg.png") repeat scroll 0 0 transparent;
+    background: url("../../img/jflow/contentBg.png") repeat scroll 0 0 transparent;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -59,7 +59,7 @@
 }
 
 .jFlowControl {
-    background: url("../../img/bullet.png") no-repeat scroll 0px 0px transparent;
+    background: url("../../img/jflow/bullet.png") no-repeat scroll 0px 0px transparent;
     float: left;
     width: 15px;
     height: 15px;

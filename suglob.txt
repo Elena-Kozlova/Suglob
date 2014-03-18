@@ -1,0 +1,7 @@
+1. Account gmail
+login - suglob.contact@gmail.com
+password - suglob.contact.password
+
+2. Account http://www.hostinger.ru/
+login - suglob.contact@gmail.com
+password - suglob.contact.password2
