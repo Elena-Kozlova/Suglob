@@ -124,7 +124,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    /*width: 1366px;*/
     min-width: 1366px;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
@@ -215,17 +214,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4em;
     float: left;
 }
-
+/******************************************/
 /*вертикальное меню*/
 ul.v_menu {
     margin: 0;
     padding: 0;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     display: inline-block;
-    background-color: #3d3e40;
-    width: 190px;
+    background-color: #999;
+    width: 332px;
+    -moz-box-shadow: -2px 0px 22px 4px #999;
+    -webkit-box-shadow: -2px 0px 22px 4px #999;
+    box-shadow: -2px 0px 22px 4px #999;
 }
 
 ul.v_menu li {
@@ -272,26 +271,26 @@ ul.v_menu li ul {
 ul.v_menu li:hover ul {
     display: block;
     position: absolute;
-    left: 190px;
+    right: 332px;
     top: 1px;
-    background-color: #28282a;
-    width: 150px;
+    background-color: #999;
+    width: 332px;
     z-index: 1000;
-    border-radius: 0 5px 5px 0;
-    -webkit-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
 }
 
 ul.v_menu li:hover ul li:first-child a:hover {
-    border-radius: 0 5px 0 0;
-    -webkit-border-radius: 0 5px 0 0;
-    -moz-border-radius: 0 5px 0 0;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
 }
 
 ul.v_menu li:hover ul li:last-child a:hover {
-    border-radius: 0 0 5px 0;
-    -webkit-border-radius: 0 0 5px 0;
-    -moz-border-radius: 0 0 5px 0;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
 }
 
 /*********************************************/
@@ -316,9 +315,9 @@ ul.v_menu li:hover ul li:last-child a:hover {
 }
 
 .ma:hover {
-    -moz-box-shadow: 0px 4px 0px 0px #c3c3c3;
-    -webkit-box-shadow: 0px 4px 0px 0px #c3c3c3;
-    box-shadow: 0px 4px 0px 0px #c3c3c3;
+    -moz-box-shadow: 0px 4px 0px 0px #999;
+    -webkit-box-shadow: 0px 4px 0px 0px #999;
+    box-shadow: 0px 4px 0px 0px #999;
 }
 
 /*ТЕЛЕФОН*/
@@ -336,7 +335,7 @@ ul.v_menu li:hover ul li:last-child a:hover {
 /* КОНТЕНТ */
 
 #main {
-    padding: 20px 20px 30px;
+    padding: 0px 0px 30px 20px;
     overflow: hidden;
 }
 
@@ -359,15 +358,14 @@ ul.v_menu li:hover ul li:last-child a:hover {
 /**/
 .coll_left {
     float: left;
-    width: 974px;
+    width: 994px;
     margin-right: 20px;
-    background-color: yellow;
+    padding-top: 30px;
 }
 
 .coll_right {
     float: left;
     width: 332px;
-    background-color: #9acd32;
 }
 
 /* sidebar */
