@@ -1,5 +1,6 @@
 $(document).ready(function () {
     initSlider();
+    initColorbox();
 });
 
 function initSlider() {
@@ -30,4 +31,8 @@ function initSlider() {
         auto:true
 
     });
+}
+
+function initColorbox() {
+    $(".cboxElement").colorbox({rel:'cboxElement'});
 }
