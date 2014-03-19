@@ -165,9 +165,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #FFF;
     width: 1366px;
     margin: 0 auto;
-    -moz-box-shadow: 0 0 10px 5px #c3c3c3;
-    -webkit-box-shadow: 0 0 10px 5px #c3c3c3;
-    box-shadow: 0 0 10px 5px #c3c3c3;
+    -moz-box-shadow: 0 0 10px 5px #55a2bc;
+    -webkit-box-shadow: 0 0 10px 5px #55a2bc;
+    box-shadow: 0 0 10px 5px #55a2bc;
 }
 
 /* header */
@@ -220,11 +220,11 @@ ul.v_menu {
     margin: 0;
     padding: 0;
     display: inline-block;
-    background-color: #999;
+    background-color: #01586d;
     width: 332px;
-    -moz-box-shadow: -2px 0px 22px 4px #999;
-    -webkit-box-shadow: -2px 0px 22px 4px #999;
-    box-shadow: -2px 0px 22px 4px #999;
+    -moz-box-shadow: -2px 0px 22px 4px #55a2bc;
+    -webkit-box-shadow: -2px 0px 22px 4px #55a2bc;
+    box-shadow: -2px 0px 22px 4px #55a2bc;
 }
 
 ul.v_menu li {
@@ -273,7 +273,7 @@ ul.v_menu li:hover ul {
     position: absolute;
     right: 332px;
     top: 1px;
-    background-color: #999;
+    background-color: #01586d;
     width: 332px;
     z-index: 1000;
     border-radius: 5px 0 0 5px;
@@ -335,6 +335,7 @@ ul.v_menu li:hover ul li:last-child a:hover {
 /* КОНТЕНТ */
 
 #main {
+    min-height: 400px;
     padding: 0px 0px 30px 20px;
     overflow: hidden;
 }
@@ -403,6 +404,11 @@ ul.v_menu li:hover ul li:last-child a:hover {
     font-size: 14px;
     line-height: 20px;
     font-style: italic;
+}
+
+footer {
+    height: 50px;
+    background-color: #9acd32;
 }
 
 /* ==========================================================================
