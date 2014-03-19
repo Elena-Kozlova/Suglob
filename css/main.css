@@ -347,7 +347,6 @@ ul.v_menu li:hover ul li:last-child a:hover {
     line-height: 24px;
     margin: 0 0 10px;
 }
-
 #main h2,
 #main h3,
 #main h4 {
@@ -410,6 +409,7 @@ footer {
     height: 50px;
     background-color: #9acd32;
 }
+
 
 /* ==========================================================================
 Helper classes
