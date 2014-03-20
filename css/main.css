@@ -193,7 +193,9 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-/*меню*/
+/* ==========================================================================
+MENU / МЕНЮ
+========================================================================== */
 .menu {
     width: 800px;
     float: left;
@@ -214,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4em;
     float: left;
 }
-/******************************************/
+
 /*вертикальное меню*/
 ul.v_menu {
     margin: 0;
@@ -262,7 +264,6 @@ ul.v_menu li:last-child a:hover {
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
 }
-
 /*Выпадающее меню*/
 ul.v_menu li ul {
     display: none;
@@ -293,7 +294,9 @@ ul.v_menu li:hover ul li:last-child a:hover {
     -moz-border-radius: 5px 0 0 5px;
 }
 
-/*********************************************/
+/* ==========================================================================
+end
+========================================================================== */
 
 .font1 {
     font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
@@ -406,10 +409,37 @@ ul.v_menu li:hover ul li:last-child a:hover {
 }
 
 footer {
-    height: 50px;
-    background-color: #9acd32;
+    height: 60px;
+    border-top: 5px solid #01586d;
 }
 
+.f_menu {
+    width: 754px;
+    float: left;
+}
+
+/*список меню*/
+.f-menu {
+    height: 30px;
+    width: 640px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+}
+
+.f-menu li {
+    margin-left: 30px;
+    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    float: left;
+}
+
+.copy {
+    width: 600px;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
 
 /* ==========================================================================
 Helper classes
