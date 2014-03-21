@@ -221,6 +221,8 @@ MENU / МЕНЮ
 ul.v_menu {
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 1000;
     display: inline-block;
     background-color: #01586d;
     width: 332px;
@@ -340,6 +342,7 @@ end
 #main {
     min-height: 400px;
     padding: 0px 0px 30px 20px;
+    background-color: rgba(73, 170, 238, 0.17);
     overflow: hidden;
 }
 
@@ -409,8 +412,11 @@ end
 }
 
 footer {
-    height: 60px;
-    border-top: 5px solid #01586d;
+    height: 350px;
+    /*border-top: 5px solid #01586d;*/
+    background-color: rgba(73, 170, 238, 0.17);
+    background-image: url("../img/graund2.png");
+    background-size: 100%;
 }
 
 .f_menu {
