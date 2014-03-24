@@ -471,6 +471,17 @@ MENU / МЕНЮ
     box-shadow: 0px 4px 0px 0px #999;
 }
 
+/* Список вакансий */
+.items {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
 /* ==========================================================================
 end
 ========================================================================== */
