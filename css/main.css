@@ -423,10 +423,10 @@ end
 }
 
 footer {
-    height: 350px;
+    height: 120px;
     /*border-top: 5px solid #01586d;*/
     background-color: rgba(73, 170, 238, 0.17);
-    background-image: url("../img/graund2.png");
+    background: url("../img/graund.jpg") no-repeat;
     background-size: 100%;
 }
 
@@ -437,7 +437,7 @@ MENU / МЕНЮ
 .f_menu {
     width: 754px;
     float: left;
-    top: 200px;
+    top: 50px;
     position: relative;
 }
 
@@ -491,7 +491,7 @@ end
     float: left;
     color: white;
     text-align: center;
-    padding-top: 206px;
+    padding-top: 55px;
 }
 
 /* ==========================================================================
