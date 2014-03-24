@@ -457,15 +457,15 @@ MENU / МЕНЮ
 }
 
 /*ссылки в меню*/
-.ma {
+.mf {
     color: #fafbff;
 }
 
-.ma:hover {
+.mf hover {
     color: red;
 }
 
-.ma:hover {
+.mf :hover {
     -moz-box-shadow: 0px 4px 0px 0px #999;
     -webkit-box-shadow: 0px 4px 0px 0px #999;
     box-shadow: 0px 4px 0px 0px #999;
