@@ -128,7 +128,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     bottom: 50px;
-    background: url("../img/background-pattern.jpg") repeat top left transparent;
+    background: white;
 }
 
 ol, ul {
@@ -165,9 +165,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #FFF;
     width: 1366px;
     margin: 0 auto;
-    -moz-box-shadow: 0 0 10px 5px #55a2bc;
-    -webkit-box-shadow: 0 0 10px 5px #55a2bc;
-    box-shadow: 0 0 10px 5px #55a2bc;
+    /*-moz-box-shadow: 0 0 10px 5px #55a2bc;*/
+    /*-webkit-box-shadow: 0 0 10px 5px #55a2bc;*/
+    /*box-shadow: 0 0 10px 5px #55a2bc;*/
 }
 
 /* header */
@@ -175,14 +175,15 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     overflow: hidden;
     position: relative;
-    height: 100px;
+    height: 92px;
+    background: url("../img/graund3.png") no-repeat;
 }
 
 /*логотип*/
 .logoWrap {
     background: url('../img/logo.png') no-repeat top left transparent;
     float: left;
-    margin: 5px 0 0 20px;
+    margin: 1px 0 0 120px;
     width: 240px;
     height: 90px;
     position: relative;
@@ -193,11 +194,17 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.logoL {
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+}
+
 /* ==========================================================================
 MENU / МЕНЮ
 ========================================================================== */
 .menu {
-    width: 800px;
+    width: 680px;
     float: left;
 }
 
@@ -222,7 +229,6 @@ ul.v_menu {
     margin: 0;
     padding: 0;
     position: relative;
-    z-index: 1000;
     display: inline-block;
     background-color: #01586d;
     width: 332px;
@@ -329,6 +335,7 @@ end
 .mobile {
     width: 300px;
     float: left;
+    text-align: center;
 }
 
 .phone {
@@ -372,6 +379,8 @@ end
 .coll_right {
     float: left;
     width: 332px;
+    position: relative;
+    z-index: 2;
 }
 
 /* sidebar */
