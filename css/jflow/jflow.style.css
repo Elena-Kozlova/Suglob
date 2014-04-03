@@ -8,12 +8,7 @@
     -webkit-border-image: url(../../img/line.jpg) 7;
     -o-border-image: url(../../img/line.jpg) 7;
     border-image: url(../../img/line.jpg) 7;
-    /*border-top: 5px solid #01586d;*/
-    /*border-bottom: 5px solid #01586d;*/
-    /*margin: 0 auto;*/
-    /*-moz-box-shadow: 0px 8px 22px 1px #55a2bc;*/
-    /*-webkit-box-shadow: 0px 8px 22px 1px #55a2bc;*/
-    /*box-shadow: 0px 8px 22px 1px #55a2bc;*/
+
 }
 
 .slideContent {

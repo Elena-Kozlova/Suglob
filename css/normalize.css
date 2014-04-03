@@ -299,9 +299,9 @@ dd {
     margin: 0 0 0 40px;
 }
 
-/**
- * Address paddings set differently in IE 6/7.
- */
+/***/
+ /** Address paddings set differently in IE 6/7.*/
+
 
 menu,
 ol,

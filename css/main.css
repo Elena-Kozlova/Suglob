@@ -19,7 +19,8 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -97,42 +98,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
-abbr, acronym, address, big, cite, code, del,
-dfn, em, img, ins, kbd, q, s, samp, small, strike,
-sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label,
-legend, table, caption, tbody, tfoot, thead,
-tr, th, td, article, aside, canvas, details,
-embed, figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, footer {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
 }
 
 body {
-    line-height: 1;
     min-width: 1366px;
-    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     bottom: 50px;
     background: white;
-}
-
-ol, ul {
-    list-style: none;
 }
 
 blockquote, q {
@@ -153,7 +129,7 @@ table {
 }
 
 a {
-    color: #f8cb1a;
+    color: #f85b01;
     text-decoration: none;
 }
 
@@ -196,9 +172,9 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: top;
     position: relative;
     z-index: 1;
-    /*-moz-box-shadow: 0 0 45px 7px #828282;*/
-    /*-webkit-box-shadow: 0 0 45px 7px #828282;*/
-    /*box-shadow: 0 0 45px 7px #828282;*/
+    -moz-box-shadow: 0 0 45px 7px #C4C2C2;
+    -webkit-box-shadow: 0 0 45px 7px #C4C2C2;
+    box-shadow: 0 0 45px 7px #C4C2C2;
 }
 
 /* ==========================================================================
@@ -219,8 +195,8 @@ MENU / МЕНЮ
 }
 
 .h-menu li {
+    list-style: none;
     margin-left: 30px;
-    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     float: left;
 }
@@ -234,12 +210,6 @@ MENU / МЕНЮ
     color: #f8cb1a;
 }
 
-.ma:hover {
-    -moz-box-shadow: 0px 4px 0px 0px #999;
-    -webkit-box-shadow: 0px 4px 0px 0px #999;
-    box-shadow: 0px 4px 0px 0px #999;
-}
-
 /*вертикальное меню*/
 ul.v_menu {
     margin: 0;
@@ -249,9 +219,6 @@ ul.v_menu {
     display: inline-block;
     background-color: #c6c6c6;
     width: 332px;
-    /*-moz-box-shadow: -2px 0px 22px 4px #55a2bc;*/
-    /*-webkit-box-shadow: -2px 0px 22px 4px #55a2bc;*/
-    /*box-shadow: -2px 0px 22px 4px #55a2bc;*/
 }
 
 ul.v_menu li {
@@ -261,10 +228,10 @@ ul.v_menu li {
 
 ul.v_menu li a {
     padding: 10px 12px 12px;
-    color: white;
-    font-size: 13px;
+    color: #000000;
+    font-size: 16px;
     font-weight: bold;
-    font-family: Arial;
+    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
     text-decoration: none;
     display: block;
     border-top: 1px solid #e5e6e5;
@@ -276,12 +243,6 @@ ul.v_menu li a:hover {
 
 ul.v_menu li:first-child a {
     border-top: none;
-}
-
-ul.v_menu li:first-child a:hover {
-    border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
 }
 
 ul.v_menu li:last-child a:hover {
@@ -299,6 +260,8 @@ ul.v_menu li:hover ul {
     position: absolute;
     right: 332px;
     top: 1px;
+    padding: 0;
+    margin: 0;
     background-color: #c6c6c6;
     width: 332px;
     z-index: 1000;
@@ -320,20 +283,8 @@ ul.v_menu li:hover ul li:last-child a:hover {
 }
 
 /* ==========================================================================
-end
+end menu
 ========================================================================== */
-
-.font1 {
-    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
-}
-
-.font2 {
-    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
-    font-size: 0.4em;
-}
-
-
 
 /*ТЕЛЕФОН*/
 .mobile {
@@ -346,37 +297,30 @@ end
     top: 38px;
     margin: 0 auto;
     position: relative;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* КОНТЕНТ */
 
 #main {
     min-height: 400px;
-    padding: 0px 0px 30px 20px;
+    padding: 0px 0px 15px 20px;
     overflow: hidden;
 }
 
-/**/
-#main p {
-    font-size: 14px;
-    color: #646464;
-    line-height: 24px;
-    margin: 0 0 10px;
-}
-#main h2,
-#main h3,
-#main h4 {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 0 20px;
-}
-
-/**/
 .coll_left {
     float: left;
     width: 994px;
     margin-right: 20px;
-    padding-top: 30px;
+    padding-top: 10px;
+}
+
+.coll_left {
+    text-align: justify;
+    font-size: 18px;
+    color: #000000;
+    line-height: 24px;
 }
 
 .coll_right {
@@ -386,42 +330,45 @@ end
     z-index: 2;
 }
 
+.vid {
+    margin-right: 15px;
+}
 /* sidebar */
 
-.sidebar-widget {
-    margin: 10px 0 20px;
-    float: left;
-    width: 282px;
-    padding: 0 20px;
-}
+/*.sidebar-widget {*/
+    /*margin: 10px 0 20px;*/
+    /*float: left;*/
+    /*width: 282px;*/
+    /*padding: 0 20px;*/
+/*}*/
 
 /**/
-#sidebar .title {
-    font: 24px/30px 'Rokkitt', serif;
-    color: #4f4e4e;
-    margin: 0 0 15px;
-    padding: 0;
-}
+/*#sidebar .title {*/
+    /*font: 24px/30px 'Rokkitt', serif;*/
+    /*color: #4f4e4e;*/
+    /*margin: 0 0 15px;*/
+    /*padding: 0;*/
+/*}*/
 
 /**/
-.ad-widget {
-    padding: 20px 0 0;
-}
+/*.ad-widget {*/
+    /*padding: 20px 0 0;*/
+/*}*/
 
 /* checklist */
 
-.check-list {
-    margin: 0;
-}
+/*.check-list {*/
+    /*margin: 0;*/
+/*}*/
 
 /**/
-.check-list li {
-    background: url('../img/checkmark.png') no-repeat 0 0 transparent;
-    padding: 0 0 12px 20px;
-    font-size: 14px;
-    line-height: 20px;
-    font-style: italic;
-}
+/*.check-list li {*/
+    /*background: url('../img/checkmark.png') no-repeat 0 0 transparent;*/
+    /*padding: 0 0 12px 20px;*/
+    /*font-size: 14px;*/
+    /*line-height: 20px;*/
+    /*font-style: italic;*/
+/*}*/
 
 footer {
     height: 120px;
@@ -453,8 +400,8 @@ MENU / МЕНЮ
 }
 
 .f-menu li {
+    list-style: none;
     margin-left: 30px;
-    font-family: Calibri, Georgia, Geneva, Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     float: left;
 }
@@ -468,23 +415,6 @@ MENU / МЕНЮ
     color: #f8cb1a;
 }
 
-.mf :hover {
-    -moz-box-shadow: 0px 4px 0px 0px #999;
-    -webkit-box-shadow: 0px 4px 0px 0px #999;
-    box-shadow: 0px 4px 0px 0px #999;
-}
-
-/* Список вакансий */
-.items {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
-
 /* ==========================================================================
 end
 ========================================================================== */
@@ -492,9 +422,9 @@ end
 .copy {
     width: 600px;
     float: left;
-    color: #e0d1b2;
+    color: white;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 40px;
 }
 
 /* ==========================================================================
